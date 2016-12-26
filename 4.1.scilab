@@ -1,5 +1,5 @@
 polynomial = poly([2.1, 0, -23, 8, 6], 'x', 'c')
 x = roots(polynomial)
 
-polynomial = poly([8, 5, 20, 5])
+polynomial = poly([8, 5, 20, 5], 'x', 'c')
 x = roots(polynomial)
