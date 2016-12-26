@@ -18,4 +18,4 @@ plot2d(t, Ztc)
 
 k_reg = reglin(x,y)
 
-regression = sum((x-mean(x)).*(y-mean(y)))/sqrt(sum(sum(x-mean(x)).^2)*sum((y-mean(y)).^2
+regression = sum((x-mean(x)).*(y-mean(y)))/sqrt(sum((x-mean(x)).^2)*sum((y-mean(y)).^2))
