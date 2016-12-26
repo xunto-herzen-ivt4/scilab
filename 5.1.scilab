@@ -12,7 +12,7 @@ c = [0; 0; 0; 0; 0;]
 
 t = [0:0.01:3]
 
-Ztc = a(1)*t.^4 + a(2)*t.^3 + a(3)*t.^2 + a(4)* t + a(5)
+Ztc = k_kor(1)*t.^4 + k_kor(2)*t.^3 + k_kor(3)*t.^2 + k_kor(4)* t + k_kor(5)
 
 plot2d(t, Ztc)
 
