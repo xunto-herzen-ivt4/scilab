@@ -1,0 +1,21 @@
+function zr=G(c,z)
+zr=z(2)-c(1)*z(1).^3-c(2)*z(1).^2-c(4)
+endfunction
+
+x = [2,2.13,2.25,2.38,2.5,2.63,2.75,2.88,3]
+y = [12.57,16.43,19,22.86,27.71,31.86,37.0,43.43,49.86]
+
+z = [x; y]
+c = [0; 0; 0; 0; 0;]
+
+[k_kor, error] = datafit(G,z,c)
+
+t = [0:0.01:3]
+
+Ztc = a(1)*t.^4 + a(2)*t.^3 + a(3)*t.^2 + a(4)* t + a(5)
+
+plot2d(t, Ztc)
+
+k_reg = reglin(x,y)
+
+regression = sum((x-mean(x)).*(y-mean(y)))/sqrt(sum(sum(x-mean(x)).^2)*sum((y-mean(y)).^2

@@ -1,0 +1,4 @@
+t=[0:0.1:7*%pi]
+
+param3d(sin(t), sin(2*t), t/5);
+param3d(cos(t), cos(2*t), sin(t))
